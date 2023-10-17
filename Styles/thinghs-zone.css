@@ -1,0 +1,8 @@
+.thinghs-zone{
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+

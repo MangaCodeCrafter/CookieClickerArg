@@ -1,0 +1,22 @@
+:root{
+    --color-fondo: #EC7063;
+    --color-fondo-oscuro: #CB4335;
+    --color-rojo-oscuro: #C0392B;
+    --color-azul-claro: #3498DB;
+    --color-azul-intermedio: #2980B9;
+    --color-azul-oscuro: #1A5276;
+
+    --tipografia-lato: 'Lato', sans-serif;
+    --tipografia-sans: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--color-fondo);
+    font-family: var(--tipografia-sans);
+}
+
+main{
+    display: flex;
+    max-width: 100%;
+    height: 100vh;
+}

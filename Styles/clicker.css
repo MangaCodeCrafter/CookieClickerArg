@@ -1,0 +1,29 @@
+.clicker{
+    width: 25%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pitusas{
+    width: 100%;
+    border-radius: 100%;
+    transition: .3s;
+}
+
+.pitusas:active{
+    transform: scale(0.9);
+}
+
+.title{
+    text-align: center;
+}
+
+.masitas-info{
+    text-align: center;
+}
+
+.counter{
+    text-align: center;
+}
