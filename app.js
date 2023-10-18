@@ -39,7 +39,7 @@ class Tienda {
         automaticZone.appendChild(etiquetaA).appendChild(etiquetaP);
 
         thinghsZone.innerHTML += `<article class="container-things">
-            <p>Cantidad de ${this.aumentador + 's'}</p>
+            <p>Cantidad de ${this.aumentador + 's'}:</p>
             <p id='${this.indicador}'>0</p>
         </article>`;
 
