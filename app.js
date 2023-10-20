@@ -1,13 +1,4 @@
-class Masita {
-    constructor(click, cantidadTotal){
-        this.click = click;
-        this.cantidadTotal = cantidadTotal;
-    }
-
-
-}
-
-class Tienda {
+class Aumentador {
     constructor(aumentador, suma, valor, indicador, id){
         this.aumentador = aumentador;
         this.suma = suma;
@@ -31,12 +22,14 @@ class Tienda {
     agregarObjeto(){
 
         const etiquetaA = document.createElement('article');
-        etiquetaA.classList.add('container-things');
-        const etiquetaP = document.createElement('p');
-        etiquetaP.id = this.id;
-        etiquetaP.textContent = this.aumentador;
+        const etiquetaPAumentador = document.createElement('p');
+        const etiquetaPValor = document.createElement('p');
+        etiquetaA.id = this.id;
+        etiquetaPAumentador.textContent = this.aumentador;
+        etiquetaPValor.textContent = this.valor;
 
-        automaticZone.appendChild(etiquetaA).appendChild(etiquetaP);
+        automaticZone.appendChild(etiquetaA).appendChild(etiquetaPAumentador);
+        automaticZone.appendChild(etiquetaA).appendChild(etiquetaPValor);
 
         thinghsZone.innerHTML += `<article class="container-things">
             <p>Cantidad de ${this.aumentador + 's'}:</p>
@@ -47,20 +40,15 @@ class Tienda {
     }
 }
 
-
-//La masita
-
-const masita = new Masita();
-
 //Tienda
 
 const automaticZone = document.getElementById('automatic-zone-id');
 const thinghsZone = document.getElementById('thinghs-zone');
 
-const click = new Tienda('Click', 1, 25, 'cant-click', 'comprar-click');
-const donha = new Tienda('Doña', 5, 100, 'cant-donha', 'comprar-donha');
-const fabrica = new Tienda('Fabrica', 1000, 100, 'cant-fabricas', 'comprar-fabrica');
-const autista = new Tienda('Manue', 777, 24, 'cant-manue', 'comprar-manue');
+const click = new Aumentador('Click', 1, 25, 'cant-click', 'comprar-click');
+const donha = new Aumentador('Doña', 5, 100, 'cant-donha', 'comprar-donha');
+const fabrica = new Aumentador('Fabrica', 1000, 100, 'cant-fabricas', 'comprar-fabrica');
+const autista = new Aumentador('Manue', 777, 24, 'cant-manue', 'comprar-manue');
 
 
 click.agregarObjeto();
@@ -108,12 +96,6 @@ let counter = document.getElementById('total');
 const sumarMasita = () => {
     cantidadMasita++;
     counter.innerHTML = `${cantidadMasita}`;
-    //console.log()
 }
 
 pitusas.addEventListener('click', sumarMasita);
-
-// Compras
-
-
-

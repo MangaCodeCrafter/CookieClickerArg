@@ -8,13 +8,13 @@
     margin-right: 1rem;
 }
 
-.automatic-zone p{
+.automatic-zone article{
     display: flex;
     background-color: var(--color-azul-claro);
     margin: 0;
     height: 3rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     border-radius: 5px;
     cursor: pointer;
     border: var(--color-azul-oscuro) 2px solid;
