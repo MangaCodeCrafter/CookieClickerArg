@@ -12,7 +12,7 @@
     display: flex;
     background-color: var(--color-azul-claro);
     border-radius: 5px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border: var(--color-azul-oscuro) 2px solid;
+    padding: 0 3rem;
 }
-

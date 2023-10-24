@@ -13,10 +13,10 @@ class Aumentador {
         this.cantidad++;
         cantidadMasita -= this.valor;
 
-        counter.innerHTML = `${cantidadMasita}`;
+        counter.innerHTML = `${Math.round(cantidadMasita * 100) / 100}`;
         document.getElementById(this.indicador).innerHTML = this.cantidad;
 
-        incremento += this.suma;
+        incremento += Math.round((this.suma / divisor) * 100) / 100;
     }
 
     agregarObjeto(){
@@ -82,20 +82,21 @@ autista.objeto.addEventListener('click', () => {
 
 let cantidadMasita = 0;
 let incremento = 0;
+let divisor = 10;
 
 const intervalo = () => {
     cantidadMasita += incremento;
-    counter.innerHTML = `${cantidadMasita}`;
+    counter.innerHTML = `${Math.round(cantidadMasita * 100) / 100}`;
 }
 
-setInterval( intervalo , 1000);
+setInterval( intervalo , 1000 / divisor);
 
 let pitusa = document.getElementById('pitusas');
 let counter = document.getElementById('total');
 
 const sumarMasita = () => {
     cantidadMasita++;
-    counter.innerHTML = `${cantidadMasita}`;
+    counter.innerHTML = `${Math.round(cantidadMasita * 100) / 100}`;
 }
 
 pitusas.addEventListener('click', sumarMasita);

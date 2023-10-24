@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 5%;
+    background-color: brown;
+    align-items: center;
+    position: absolute;
+}
+
+.title {
+    margin: 0 5rem;
+}
+
+header button{
+    margin: 0 5rem;
+}
