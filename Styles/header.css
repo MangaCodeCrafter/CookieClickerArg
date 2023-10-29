@@ -10,8 +10,19 @@ header {
 
 .title {
     margin: 0 5rem;
+    font-family: var(--tipografia-lato);
 }
 
 header button{
     margin: 0 5rem;
+    background-color: var(--color-azul-claro);
+    border-radius: 5px;
+    border-style: none;    
+    border: 2px var(--color-azul-oscuro) solid;
+    cursor: pointer;
+    transition: .3s;
+}
+
+header button:active{
+    transform: scale(.9);
 }
